@@ -6,7 +6,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # $2 = containing path
 function fileMover () {
     if [ -f ~/$1 ]; then
-        echo "$1 exists "
+        echo "File Already Exists: ~/$1 "
     else
         cp $DIR/$2/$1 ~/$1
 
@@ -18,13 +18,9 @@ function fileMover () {
     fi
 }
 
-#for file in $(ls ./bash/)
-for file in $(ls $DIR/bash)
-do 
-    echo "file:  $file"
-done
-
-echo $DIR/bash
-
-#fileMover caladan.terminal bash
-#fileMover 
+#To-Do: loop through bash and run function
+fileMover .bash_aliases bash
+fileMover .bash_profile bash
+fileMover .git-completion.bash bash
+fileMover .git-prompt.sh bash
+fileMover .vimrc bash
