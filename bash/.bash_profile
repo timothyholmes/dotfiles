@@ -23,7 +23,6 @@ GIT_PS1_SHOWUNTRACKEDFILES="true"
 GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_SHOWCOLORHINTS="true"
 
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi

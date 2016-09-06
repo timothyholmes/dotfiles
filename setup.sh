@@ -20,7 +20,21 @@ function fileMover () {
 
 #To-Do: loop through bash and run function
 fileMover .bash_aliases bash
-fileMover .bash_profile bash
 fileMover .git-completion.bash bash
 fileMover .git-prompt.sh bash
 fileMover .vimrc bash
+fileMover .bash_profile bash
+
+if [ -d ~/.nvm ]; then
+    echo "nvm already installed"
+else
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh | bash
+    
+    if [ -d ~/.nvm ]; then
+        echo "nvm installed successfully"
+        nvm install v4
+        nvm alias default v4
+    else
+        echo "nvm not installed"
+    fi
+fi
