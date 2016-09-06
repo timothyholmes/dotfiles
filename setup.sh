@@ -35,6 +35,6 @@ else
         nvm install v4
         nvm alias default v4
     else
-        echo "nvm not installed"
+        echo "Error: nvm not installed"
     fi
 fi
