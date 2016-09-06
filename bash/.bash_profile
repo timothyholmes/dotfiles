@@ -9,6 +9,10 @@ HISTFILESIZE=100000
 
 PROMPT_COMMAND='RET=$?;'
 
+function _returnLambda {
+   if [[ $RET = 0 ]]; then echo -e '\033[01;32m'; else echo -e '\033[01;31m'; fi;
+}
+
 if [ -f ~/.git-prompt.sh ]; then
     . ~/.git-prompt.sh
 fi
