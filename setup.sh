@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # $1 = file name
 # $2 = containing path
-function fileMover () {
+function moveFilesHome () {
     if [ -f ~/$1 ]; then
         echo "File Already Exists: ~/$1 "
     else
@@ -18,17 +18,20 @@ function fileMover () {
     fi
 }
 
-#To-Do: loop through bash and run function
-fileMover .bash_aliases bash
-fileMover .git-completion.bash bash
-fileMover .git-prompt.sh bash
-fileMover .vimrc bash
-fileMover .bash_profile bash
+# To-Do: loop through bash and run function
+# Move bash files to home directory
+moveFilesHome .bash_aliases bash
+moveFilesHome .git-completion.bash bash
+moveFilesHome .git-prompt.sh bash
+moveFilesHome .vimrc bash
+moveFilesHome .bash_profile bash
 
+# Install NVM
 if [ -d ~/.nvm ]; then
     echo "nvm already installed"
 else
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh | bash
+    source ~/.bash_profile
     
     if [ -d ~/.nvm ]; then
         echo "nvm installed successfully"
@@ -38,3 +41,6 @@ else
         echo "Error: nvm not installed"
     fi
 fi
+
+# Source profile
+source ~/.bash_profile
