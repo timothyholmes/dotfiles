@@ -18,13 +18,11 @@ function moveFilesHome () {
     fi
 }
 
-# To-Do: loop through bash and run function
-# Move bash files to home directory
-moveFilesHome .bash_aliases bash
-moveFilesHome .git-completion.bash bash
-moveFilesHome .git-prompt.sh bash
-moveFilesHome .vimrc bash
-moveFilesHome .bash_profile bash
+#  Move bash files to home directory
+for file in $(find ./bash -type f -exec basename {} \;)
+do
+    moveFilesHome $file bash
+done
 
 # Install NVM
 if [ -d ~/.nvm ]; then
@@ -35,8 +33,6 @@ else
     
     if [ -d ~/.nvm ]; then
         echo "nvm installed successfully"
-        nvm install v4
-        nvm alias default v4
     else
         echo "Error: nvm not installed"
     fi
