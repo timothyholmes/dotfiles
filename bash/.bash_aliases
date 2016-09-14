@@ -13,8 +13,10 @@ alias apacherestart='sudo apachectl restart'
 for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a"; done
 
 # List files
-alias ll='ls -alF'
 alias la='ls -A'
+alias ll='ls -FGlAhp'
+alias ls='ls -FGlAhp'
+alias l='ls -FGlAhp'
 
 alias a='atom .'
 alias aa='atom -a .'
