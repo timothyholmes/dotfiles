@@ -10,12 +10,11 @@ alias reloadbash='source /etc/profile && source ~/.bash_profile && source ~/.bas
 # APACHE2
 alias apacherestart='sudo apachectl restart'
 
-for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a"; done
+for a in $(ls ~/Sites/); do alias $a="cd ~/Sites/$a"; done
 
 # List files
 alias la='ls -A'
 alias ll='ls -FGlAhp'
-alias ls='ls -FGlAhp'
 alias l='ls -FGlAhp'
 
 alias a='atom .'
