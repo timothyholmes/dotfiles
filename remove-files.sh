@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # $1 = file name
 # $2 = containing path
-function moveFilesHome () {
+function delete () {
     if [ -f ~/$1 ]; then
         rm -f ~/$1
         
@@ -18,8 +18,8 @@ function moveFilesHome () {
     fi
 }
 
-#  Move bash files to home directory
+# Delete bash preference files
 for file in $(find ./bash -type f -exec basename {} \;)
 do
-    moveFilesHome $file bash
+    delete $file
 done
