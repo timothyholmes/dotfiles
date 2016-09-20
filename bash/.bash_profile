@@ -31,7 +31,7 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;33m\]$(__git_ps1)\[\033[0;34m\]] > \[\033[0;97m\]'
+PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;33m\]$(__git_ps1)\[\033[0;34m\]] \[$(_returnLambda)\]> \[\033[0;97m\]'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
