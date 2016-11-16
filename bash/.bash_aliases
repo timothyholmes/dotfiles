@@ -4,8 +4,8 @@ alias edithosts='sudo vim /etc/hosts'
 
 alias saymyname='echo "The Goblin"'
 
-# RELOAD ALL BASH
-alias reloadbash='source /etc/profile && source ~/.bash_profile && source ~/.bashrc && source ~/.bash_aliases'
+# Source Bash Profile
+alias srcp='source ~/.bash_profile'
 
 # APACHE2
 alias apacherestart='sudo apachectl restart'
@@ -17,9 +17,12 @@ alias la='ls -A'
 alias ll='ls -FGlAhp'
 alias l='ls -FGlAhp'
 
+# Atom
 alias a='atom .'
 alias aa='atom -a .'
 alias chr='open -a "Google Chrome"'
+
+alias clearnode='rm -rf node_modules && npm cache clear && rm -rf ~/.npm_lazy/'
 
 # Hidden Files
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
