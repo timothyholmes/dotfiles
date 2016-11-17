@@ -23,6 +23,7 @@ alias aa='atom -a .'
 alias chr='open -a "Google Chrome"'
 
 alias clearnode='rm -rf node_modules && npm cache clear && rm -rf ~/.npm_lazy/'
+alias refreshshawty='git pull && clearnode && npmr i'
 
 # Hidden Files
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
