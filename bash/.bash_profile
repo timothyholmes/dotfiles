@@ -22,6 +22,7 @@ GIT_PS1_SHOWSTASHSTAT="true"
 GIT_PS1_SHOWUNTRACKEDFILES="true"
 GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_SHOWCOLORHINTS="true"
+MONGO_URL="mongodb://localhost:27017/"
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
