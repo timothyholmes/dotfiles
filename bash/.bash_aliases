@@ -10,7 +10,7 @@ alias srcp='source ~/.bash_profile'
 # APACHE2
 alias apacherestart='sudo apachectl restart'
 
-for a in $(ls ~/Sites/); do alias $a="cd ~/Sites/$a && nvm use 6"; done
+for a in $(ls ~/Sites/); do alias $a="cd ~/Sites/$a && git status"; done
 
 # List files
 alias la='ls -A'
