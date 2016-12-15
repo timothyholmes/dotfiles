@@ -32,7 +32,7 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-weather
+echo '🎄 ❄️ ⛄ 🎄 ❄️ ⛄ 🎄 ❄️ ⛄ 🎄 ❄️ ⛄' $((25 - $(date '+%d'))) ' Days until Christmas!! 🎄 ❄️ ⛄ 🎄 ❄️ ⛄ 🎄 ❄️ ⛄ 🎄 ❄️ ⛄'
 
 PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;33m\]$(__git_ps1)\[\033[0;34m\]] \[$(_returnLambda)\]> \[\033[0;97m\]'
 
