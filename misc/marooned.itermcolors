@@ -20,13 +20,13 @@
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.0078431377187371254</real>
+		<real>0.16945382952690125</real>
 		<key>Color Space</key>
 		<string>Calibrated</string>
 		<key>Green Component</key>
-		<real>0.10588235408067703</real>
+		<real>0.0</real>
 		<key>Red Component</key>
-		<real>0.80392158031463623</real>
+		<real>0.9859006404876709</real>
 	</dict>
 	<key>Ansi 10 Color</key>
 	<dict>
@@ -215,13 +215,13 @@
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.19105100631713867</real>
+		<real>0.18957310914993286</real>
 		<key>Color Space</key>
 		<string>Calibrated</string>
 		<key>Green Component</key>
-		<real>0.29095295071601868</real>
+		<real>0.094524383544921875</real>
 		<key>Red Component</key>
-		<real>0.10331939160823822</real>
+		<real>0.32410734891891479</real>
 	</dict>
 	<key>Badge Color</key>
 	<dict>
@@ -293,13 +293,13 @@
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.73332345485687256</real>
+		<real>0.79956644773483276</real>
 		<key>Color Space</key>
 		<string>Calibrated</string>
 		<key>Green Component</key>
-		<real>0.73331212997436523</real>
+		<real>0.7992246150970459</real>
 		<key>Red Component</key>
-		<real>0.73335403203964233</real>
+		<real>0.81419265270233154</real>
 	</dict>
 	<key>Link Color</key>
 	<dict>

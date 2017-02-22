@@ -32,7 +32,9 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;33m\]$(__git_ps1)\[\033[0;34m\]] \[$(_returnLambda)\]> \[\033[0;97m\]'
+# Top PS 1 is light text, bottom is dark
+# PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;33m\]$(__git_ps1)\[\033[0;34m\]]\[$(_returnLambda)\] > \[\033[0;97m\]'
+PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;35m\]$(__git_ps1)\[\033[0;34m\]]\[$(_returnLambda)\] > \[\033[0;30m\]'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
