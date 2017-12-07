@@ -33,8 +33,12 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # Top PS 1 is light text, bottom is dark
+# PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W \[$(_returnLambda)\]> \[\033[0;97m\]'
+PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W \[$(_returnLambda)\]> \[\033[0;30m\]'
+
+# git branch ps1s
 # PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;33m\]$(__git_ps1)\[\033[0;34m\]]\[$(_returnLambda)\] > \[\033[0;97m\]'
-PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;35m\]$(__git_ps1)\[\033[0;34m\]]\[$(_returnLambda)\] > \[\033[0;30m\]'
+# PS1='\[$(_returnLambda)\]* \[\033[0;34m\]\W [\[\033[0;35m\]$(__git_ps1)\[\033[0;34m\]]\[$(_returnLambda)\] > \[\033[0;30m\]'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
