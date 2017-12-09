@@ -40,8 +40,9 @@ fi
 source ~/.bash_profile
 source ~/.nvm/nvm.sh
 
-nvm install 7
-nvm alias default 7
+nvm install --lts
+nvm install 8
+nvm alias default 8
 
 # Source profile
 source ~/.bash_profile
