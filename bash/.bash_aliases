@@ -17,7 +17,7 @@ alias a='atom .'
 alias aa='atom -a .'
 
 # VSCode
-alias vc='code -a .'
+alias ca='code -a .'
 
 # Hidden Files
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
