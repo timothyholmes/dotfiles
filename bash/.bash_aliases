@@ -6,6 +6,7 @@ alias edithosts='sudo vim /etc/hosts'
 alias srcp='source ~/.bash_profile'
 
 for a in $(ls ~/Sites/); do alias $a="cd ~/Sites/$a && if [ -d ./.git ]; then git status; fi;"; done
+for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a && if [ -d ./.git ]; then git status; fi;"; done
 
 # List files
 alias la='ls -A'
