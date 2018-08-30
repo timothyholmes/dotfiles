@@ -1,11 +1,11 @@
-# Dev Preferences
+# dotfiles
 
-Give the script permission and run
+### scripts
 
-```shell
-./setup.sh
-```
+setup.sh installs ~/.* preference files and nvm
 
-### Credit
+remove-files.sh removes installed preference files
 
-misc/one-dark.itermcolors comes from here - https://github.com/anunez/one-dark-iterm
+### /misc
+
+iterm color profiles
