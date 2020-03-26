@@ -1,3 +1,5 @@
 # dotfiles
 
-This is my rifle. There are many like it, but this one is mine.
+Personal machine setup framework in TypeScript
+
+![](https://media.giphy.com/media/1ybnh8CsoWoko/giphy.gif)
