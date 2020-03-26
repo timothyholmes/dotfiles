@@ -1,0 +1,47 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "CLI for setting up personal dev environment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "get-vscode-extensions": "code --list-extensions | xargs -L 1 echo code --install-extension > ./assets/vscode_extensions.sh",
+    "get-shell-settings": "cp ~/.zshrc ./assets/ && cp ~/.hyper.js ./assets/ && cp ~/.aliases ./assets/ && cp ~/.vimrc ./assets/ && cp $HOME/Library/Application\\ Support/Code/User/settings.json ./assets/ && cp $HOME/Library/Application\\ Support/Code/User/keybindings.json ./assets/",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:timothyholmes/dotfiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/auth-basic": "^1.4.0",
+    "@octokit/rest": "^17.0.0",
+    "chalk": "^3.0.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^5.0.1",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.4",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.0",
+    "shelljs": "^0.8.3",
+    "simple-git": "^1.131.0",
+    "touch": "^3.1.0",
+    "typescript": "^3.8.2"
+  },
+  "devDependencies": {
+    "@hapi/rule-capitalize-modules": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}

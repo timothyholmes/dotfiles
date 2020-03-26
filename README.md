@@ -1,11 +1,3 @@
 # dotfiles
 
-### scripts
-
-setup.sh installs ~/.* preference files and nvm
-
-remove-files.sh removes installed preference files
-
-### /misc
-
-iterm color profiles
+This is my rifle. There are many like it, but this one is mine.
