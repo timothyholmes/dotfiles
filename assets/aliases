@@ -1,0 +1,20 @@
+
+# Source Bash
+alias srcp='source ~/.zshrc'
+# good list
+alias la='ls -FGlAhp'
+# Open in VSCode
+alias ca='code -a .'
+# weather
+alias weather='curl -4 http://wttr\.in'
+
+# docker commands
+alias docker-clean-all='(docker stop $(docker container ls -a -q) 2> /dev/null) && docker system prune -a -f --volumes'
+alias docker-clean-unused='docker system prune --all --force --volumes'
+
+alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+# quick aliases for project navigation
+if [ -d ~/Projects ]
+  then for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a && if [ -d ./.git ]; then git status; fi;"; done
+fi               

@@ -1,0 +1,26 @@
+{
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.iconTheme": "vscode-great-icons",
+    "editor.formatOnSave": false,
+    "eslint.autoFixOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.lineHeight": 25,
+    "window.zoomLevel": 0,
+    "terminal.integrated.lineHeight": 1.75,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.editor.showTabs": true,
+    "explorer.confirmDragAndDrop": false,
+    "breadcrumbs.enabled": true,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "workbench.colorTheme": "Noctis Minimus",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
