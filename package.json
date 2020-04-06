@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node build/index.js",
     "get-vscode-extensions": "code --list-extensions | xargs -L 1 echo code --install-extension > ./assets/vscode_extensions.sh",
-    "get-shell-settings": "cp ~/.zshrc ./assets/ && cp ~/.hyper.js ./assets/ && cp ~/.aliases ./assets/ && cp ~/.vimrc ./assets/ && cp $HOME/Library/Application\\ Support/Code/User/settings.json ./assets/ && cp $HOME/Library/Application\\ Support/Code/User/keybindings.json ./assets/",
+    "get-shell-settings": "cp ~/.zshrc ./assets/zshrc && cp ~/.hyper.js ./assets/hyper.js && cp ~/.aliases ./assets/aliases && cp ~/.vimrc ./assets/vimrc && cp $HOME/Library/Application\\ Support/VSCodium/User/settings.json ./assets/ && cp $HOME/Library/Application\\ Support/VSCodium/User/keybindings.json ./assets/",
     "tsc": "tsc"
   },
   "repository": {
