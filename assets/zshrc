@@ -13,3 +13,9 @@ export NVM_DIR="$HOME/.nvm"
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+export PATH="$HOME/.poetry/bin:$PATH"
