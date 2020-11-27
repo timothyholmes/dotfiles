@@ -8,6 +8,8 @@ alias ca='code -a .'
 # weather
 alias weather='curl -4 http://wttr\.in'
 
+alias influx-cli='docker exec -it influxdb influx'
+
 # docker commands
 alias docker-clean-all='(docker stop $(docker container ls -a -q) 2> /dev/null) && docker system prune -a -f --volumes'
 alias docker-clean-unused='docker system prune --all --force --volumes'
@@ -18,3 +20,5 @@ alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 if [ -d ~/Projects ]
   then for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a && if [ -d ./.git ]; then git status; fi;"; done
 fi               
+
+alias ecr-login="aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 550337420165.dkr.ecr.us-east-1.amazonaws.com"

@@ -2,6 +2,12 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
+/*
+  cool themes:
+  - hyper-rose-pine
+  - hyper-hypest
+*/
+
 module.exports = {
   config: {
     opacity: 0.95,
@@ -157,18 +163,12 @@ module.exports = {
     }
   },
 
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
   plugins: [
-    "hyper-hypest",
+    "hyper-aura-theme",
     "hyper-statusline",
     "hyper-search", 
     "hypercwd", 
-    "hyper-opacity",
+    "hyper-opacity"
   ],
 
   // in development, you can create a directory under
