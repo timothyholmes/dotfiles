@@ -16,9 +16,18 @@ alias docker-clean-unused='docker system prune --all --force --volumes'
 
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
+alias nodebox="ssh tholmes@nodejs.tholmes.dev.use1.amz.mtmetest.com"
+alias javabox="ssh tholmes@java.tholmes.dev.use1.amz.mtmetest.com"
+alias postbox="ssh tholmes@db.tholmes.dev.use1.amz.mtmetest.com"
+alias redisbox="ssh tholmes@redis.tholmes.dev.use1.amz.mtmetest.com"
+
 # quick aliases for project navigation
 if [ -d ~/Projects ]
   then for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a && if [ -d ./.git ]; then git status; fi;"; done
 fi               
 
 alias ecr-login="aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 550337420165.dkr.ecr.us-east-1.amazonaws.com"
+alias eslint-init="echo -e \"module.exports = {\n  extends: 'tmg-standards',\n};\" > .eslintrc.js"
+
+alias light-term="sed -i '.bak' 's/darkmode: true/darkmode: false/' /Users/timothyholmes/.hyper.js"
+alias dark-term="sed -i '.bak' 's/darkmode: false/darkmode: true/' /Users/timothyholmes/.hyper.js"

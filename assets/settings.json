@@ -19,8 +19,12 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "workbench.colorTheme": "Noctis Minimus",
+    "workbench.colorTheme": "GitHub Light",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    }
+    },
+    "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "window.autoDetectColorScheme": true,
+    "debug.javascript.autoAttachFilter": "onlyWithFlag"
 }

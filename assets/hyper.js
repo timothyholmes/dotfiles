@@ -10,7 +10,6 @@
 
 module.exports = {
   config: {
-    opacity: 0.95,
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
@@ -148,7 +147,7 @@ module.exports = {
 
 
     hypest: {
-      darkmode: true,
+      darkmode: false,
       vibrancy: false,
       borders: false,
       hideControls: false,
@@ -158,17 +157,16 @@ module.exports = {
       // Supported  colors are 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan' and 'white'
       // Custom colors must be specified as 6 character hexadecimals
       colors: {
-        black: '#DDDDDD'
+        black: '#777777'
       }
     }
   },
 
   plugins: [
-    "hyper-aura-theme",
+    "hyper-material-theme",
     "hyper-statusline",
     "hyper-search", 
-    "hypercwd", 
-    "hyper-opacity"
+    "hypercwd"
   ],
 
   // in development, you can create a directory under
