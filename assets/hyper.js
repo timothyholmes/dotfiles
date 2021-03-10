@@ -146,6 +146,7 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
 
 
+    // hypest theme options
     hypest: {
       darkmode: false,
       vibrancy: false,
@@ -159,11 +160,23 @@ module.exports = {
       colors: {
         black: '#777777'
       }
+    },
+
+    // hyper-gruvbox theme options
+    gruvboxTheme: {
+      style: 'dark', // or 'light'
+      contrast: 'hard' // or 'soft', 'hard'
+    },
+
+    opacity: {
+      focus: 0.97,
+      blur: 0.3
     }
   },
 
   plugins: [
-    "hyper-material-theme",
+    "hyper-gruvbox",
+    "hyper-opacity",
     "hyper-statusline",
     "hyper-search", 
     "hypercwd"
