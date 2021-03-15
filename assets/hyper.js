@@ -162,20 +162,21 @@ module.exports = {
       }
     },
 
-    // hyper-gruvbox theme options
+    // hyper-papercolor theme options
     gruvboxTheme: {
       style: 'dark', // or 'light'
       contrast: 'hard' // or 'soft', 'hard'
     },
 
     opacity: {
-      focus: 0.97,
-      blur: 0.3
+      focus: 1,
+      blur: 1
     }
   },
 
   plugins: [
-    "hyper-gruvbox",
+//    "hyper-papercolor",
+    "hyper-teatime",
     "hyper-opacity",
     "hyper-statusline",
     "hyper-search", 

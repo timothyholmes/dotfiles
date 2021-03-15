@@ -29,5 +29,5 @@ fi
 alias ecr-login="aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 550337420165.dkr.ecr.us-east-1.amazonaws.com"
 alias eslint-init="echo -e \"module.exports = {\n  extends: 'tmg-standards',\n};\" > .eslintrc.js"
 
-alias light-term="sed -i '.bak' 's/hyper-gruvbox/hyper-papercolor/' /Users/timothyholmes/.hyper.js"
-alias dark-term="sed -i '.bak' 's/hyper-papercolor/hyper-gruvbox/' /Users/timothyholmes/.hyper.js"
+alias light-term="sed -i '.bak' 's/hyper-gruvbox/hyper-teatime/' /Users/timothyholmes/.hyper.js"
+alias dark-term="sed -i '.bak' 's/hyper-teatime/hyper-gruvbox/' /Users/timothyholmes/.hyper.js"

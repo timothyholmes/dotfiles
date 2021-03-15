@@ -19,11 +19,11 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Horizon Bright Italic",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "workbench.preferredLightColorTheme": "Gruvbox Light Hard",
+    "workbench.preferredLightColorTheme": "Horizon Bright Italic",
     "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
     "window.autoDetectColorScheme": true,
     "debug.javascript.autoAttachFilter": "onlyWithFlag",
