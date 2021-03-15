@@ -8,7 +8,7 @@ function install(): void {
   }
 
   if (sh.which('brew')) {
-    sh.exec('brew cask reinstall postman')
+    sh.exec('brew reinstall --cask postman')
     return
   }
 

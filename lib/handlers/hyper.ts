@@ -6,7 +6,7 @@ function install(): void {
     console.log(Chalk.magenta('hyper already installed'))
   } else {
     sh.exec('brew update')
-    sh.exec('brew cask reinstall hyper')
+    sh.exec('brew reinstall --cask hyper')
   }
 
   console.log(Chalk.bgMagenta('syncing hyper configs...'))
