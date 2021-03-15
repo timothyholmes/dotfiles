@@ -10,7 +10,6 @@
 
 module.exports = {
   config: {
-    opacity: 0.95,
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
@@ -147,8 +146,9 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
 
 
+    // hypest theme options
     hypest: {
-      darkmode: true,
+      darkmode: false,
       vibrancy: false,
       borders: false,
       hideControls: false,
@@ -158,17 +158,29 @@ module.exports = {
       // Supported  colors are 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan' and 'white'
       // Custom colors must be specified as 6 character hexadecimals
       colors: {
-        black: '#DDDDDD'
+        black: '#777777'
       }
+    },
+
+    // hyper-papercolor theme options
+    gruvboxTheme: {
+      style: 'dark', // or 'light'
+      contrast: 'hard' // or 'soft', 'hard'
+    },
+
+    opacity: {
+      focus: 1,
+      blur: 1
     }
   },
 
   plugins: [
-    "hyper-aura-theme",
+//    "hyper-papercolor",
+    "hyper-teatime",
+    "hyper-opacity",
     "hyper-statusline",
     "hyper-search", 
-    "hypercwd", 
-    "hyper-opacity"
+    "hypercwd"
   ],
 
   // in development, you can create a directory under

@@ -21,4 +21,5 @@ if [ -d ~/Projects ]
   then for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a && if [ -d ./.git ]; then git status; fi;"; done
 fi               
 
-alias ecr-login="aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 550337420165.dkr.ecr.us-east-1.amazonaws.com"
+alias light-term="sed -i '.bak' 's/hyper-gruvbox/hyper-teatime/' /Users/timothyholmes/.hyper.js"
+alias dark-term="sed -i '.bak' 's/hyper-teatime/hyper-gruvbox/' /Users/timothyholmes/.hyper.js"
