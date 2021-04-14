@@ -19,6 +19,7 @@
   "dependencies": {
     "@octokit/auth-basic": "^1.4.0",
     "@octokit/rest": "^17.0.0",
+    "axios": "^0.21.1",
     "chalk": "^3.0.0",
     "clear": "^0.1.0",
     "clui": "^0.3.6",

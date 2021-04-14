@@ -11,6 +11,7 @@ import { install as zshInstall } from './handlers/zsh'
 import { install as powerlineFontsInstall } from './handlers/powerlineFonts'
 import { install as postmanInstall } from './handlers/postman'
 import { install as dbeaverInstall } from './handlers/dbeaver'
+import { install as rectangleInstall } from './handlers/rectangle'
 
 const handlers = new Map<string, () => void>([
   ['nvm', nvmInstall],
@@ -21,6 +22,7 @@ const handlers = new Map<string, () => void>([
   ['powerline-fonts', powerlineFontsInstall],
   ['postman', postmanInstall],
   ['dbeaver', dbeaverInstall],
+  ['rectangle', rectangleInstall],
 ])
 
 const installMethods = new Map<string, (choices: Array<string>) => Promise<Array<string>>>([
