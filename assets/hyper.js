@@ -175,8 +175,7 @@ module.exports = {
   },
 
   plugins: [
-//    "hyper-papercolor",
-    "hyper-teatime",
+    "hyper-gruvbox",
     "hyper-opacity",
     "hyper-statusline",
     "hyper-search", 

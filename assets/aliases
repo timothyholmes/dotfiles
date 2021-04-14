@@ -19,7 +19,4 @@ alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 # quick aliases for project navigation
 if [ -d ~/Projects ]
   then for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a && if [ -d ./.git ]; then git status; fi;"; done
-fi               
-
-alias light-term="sed -i '.bak' 's/hyper-gruvbox/hyper-teatime/' /Users/timholmes/.hyper.js"
-alias dark-term="sed -i '.bak' 's/hyper-teatime/hyper-gruvbox/' /Users/timholmes/.hyper.js"
+fi

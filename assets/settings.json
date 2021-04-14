@@ -6,7 +6,6 @@
     "eslint.autoFixOnSave": true,
     "editor.minimap.enabled": false,
     "editor.lineHeight": 16,
-    "window.zoomLevel": 1,
     "terminal.integrated.lineHeight": 1.75,
     "workbench.startupEditor": "newUntitledFile",
     "editor.tabSize": 2,
@@ -19,7 +18,7 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "workbench.colorTheme": "Horizon Bright Italic",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
