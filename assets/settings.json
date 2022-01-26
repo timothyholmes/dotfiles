@@ -1,7 +1,7 @@
 {
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.iconTheme": "eq-material-theme-icons",
     "editor.formatOnSave": false,
     "eslint.autoFixOnSave": true,
     "editor.minimap.enabled": false,
@@ -22,9 +22,13 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "workbench.preferredLightColorTheme": "Horizon Bright Italic",
+    "workbench.preferredLightColorTheme": "Noctis Hibernus",
     "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
-    "window.autoDetectColorScheme": true,
     "debug.javascript.autoAttachFilter": "onlyWithFlag",
-    "workbench.preferredHighContrastColorTheme": "Gruvbox Dark Hard"
+    "workbench.preferredHighContrastColorTheme": "Noctis Obscuro",
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.associations": {
+        "*.inc": "php"
+    }
 }

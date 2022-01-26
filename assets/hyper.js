@@ -148,8 +148,8 @@ module.exports = {
 
     // hypest theme options
     hypest: {
-      darkmode: false,
-      vibrancy: false,
+      darkmode: true,
+      vibrancy: true,
       borders: false,
       hideControls: false,
       // Default is 'blue'
@@ -177,7 +177,7 @@ module.exports = {
   plugins: [
     "hyper-gruvbox",
     "hyper-opacity",
-    "hyper-statusline",
+    // "hyper-statusline",
     "hyper-search", 
     "hypercwd"
   ],

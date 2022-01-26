@@ -16,10 +16,10 @@ alias docker-clean-unused='docker system prune --all --force --volumes'
 
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
-alias nodebox="ssh tholmes@nodejs.tholmes.dev.use1.amz.mtmetest.com"
-alias javabox="ssh tholmes@java.tholmes.dev.use1.amz.mtmetest.com"
-alias postbox="ssh tholmes@db.tholmes.dev.use1.amz.mtmetest.com"
-alias redisbox="ssh tholmes@redis.tholmes.dev.use1.amz.mtmetest.com"
+alias javabox="ssh -A -i ~/.ssh/tholmes.pem luminate@java.tholmes.dev.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com"
+alias nodebox="ssh -A -i ~/.ssh/tholmes.pem  luminate@nodejs.tholmes.dev.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com"
+alias nodebox2="ssh -A -i ~/.ssh/tholmes.pem  luminate@nodejs.tholmes.dev2.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com"
+alias phpbox="ssh -A -i ~/.ssh/tholmes.pem  luminate@php.tholmes.dev.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com"
 
 # quick aliases for project navigation
 if [ -d ~/Projects ]
@@ -28,3 +28,10 @@ fi
 
 alias ecr-login="aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 550337420165.dkr.ecr.us-east-1.amazonaws.com"
 alias eslint-init="echo -e \"module.exports = {\n  extends: 'tmg-standards',\n};\" > .eslintrc.js"
+
+alias light-term="sed -i '.bak' 's/hyper-gruvbox/hyper-papercolor/' /Users/timothyholmes/.hyper.js"
+alias dark-term="sed -i '.bak' 's/hyper-papercolor/hyper-gruvbox/' /Users/timothyholmes/.hyper.js"
+
+alias pr-pull="git pull --rebase gerrit master"
+alias pr-version="npm --no-git-tag-version version"
+alias pr-push="git push gerrit HEAD:refs/for/master"
