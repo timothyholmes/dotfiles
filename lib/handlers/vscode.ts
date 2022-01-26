@@ -3,7 +3,7 @@ const Chalk = require('chalk')
 
 function install(): void {
   if (!sh.which('code')) {
-    sh.exec('brew cask reinstall visual-studio-code')
+    sh.exec('brew reinstall visual-studio-code')
     return
   } else {
     console.log(Chalk.magenta('vscode already installed'))
