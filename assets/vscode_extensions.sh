@@ -11,6 +11,7 @@ code --install-extension mechatroner.rainbow-csv
 code --install-extension mikestead.dotenv
 code --install-extension mohsen1.prettify-json
 code --install-extension mrmlnc.vscode-duplicate
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.atom-keybindings
 code --install-extension oderwat.indent-rainbow
 code --install-extension rbbit.typescript-hero

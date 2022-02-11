@@ -8,30 +8,10 @@ alias ca='code -a .'
 # weather
 alias weather='curl -4 http://wttr\.in'
 
-alias influx-cli='docker exec -it influxdb influx'
-
-# docker commands
-alias docker-clean-all='(docker stop $(docker container ls -a -q) 2> /dev/null) && docker system prune -a -f --volumes'
-alias docker-clean-unused='docker system prune --all --force --volumes'
-
-alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-
-alias javabox="ssh -A -i ~/.ssh/tholmes.pem luminate@java.tholmes.dev.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com"
-alias nodebox="ssh -A -i ~/.ssh/tholmes.pem  luminate@nodejs.tholmes.dev.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com"
-alias nodebox2="ssh -A -i ~/.ssh/tholmes.pem  luminate@nodejs.tholmes.dev2.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com"
-alias phpbox="ssh -A -i ~/.ssh/tholmes.pem  luminate@php.tholmes.dev.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com"
-
 # quick aliases for project navigation
 if [ -d ~/Projects ]
   then for a in $(ls ~/Projects/); do alias $a="cd ~/Projects/$a && if [ -d ./.git ]; then git status; fi;"; done
 fi               
 
-alias ecr-login="aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 550337420165.dkr.ecr.us-east-1.amazonaws.com"
-alias eslint-init="echo -e \"module.exports = {\n  extends: 'tmg-standards',\n};\" > .eslintrc.js"
-
 alias light-term="sed -i '.bak' 's/hyper-gruvbox/hyper-papercolor/' /Users/timothyholmes/.hyper.js"
 alias dark-term="sed -i '.bak' 's/hyper-papercolor/hyper-gruvbox/' /Users/timothyholmes/.hyper.js"
-
-alias pr-pull="git pull --rebase gerrit master"
-alias pr-version="npm --no-git-tag-version version"
-alias pr-push="git push gerrit HEAD:refs/for/master"
