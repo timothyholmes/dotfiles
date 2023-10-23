@@ -2,7 +2,7 @@ const sh = require('shelljs')
 const Chalk = require('chalk')
 
 function install(): void {
-  if (!sh.which('code')) {
+  if (!sh.which('codium')) {
     sh.exec('brew reinstall vscodium')
     return
   } else {

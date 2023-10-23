@@ -1,47 +1,4 @@
 {
-    "atomKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "editor.formatOnSave": false,
-    "editor.lineHeight": 16,
-    "terminal.integrated.lineHeight": 1.75,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.tabSize": 2,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "workbench.editor.showTabs": true,
-    "explorer.confirmDragAndDrop": false,
-    "breadcrumbs.enabled": true,
-    "editor.suggestSelection": "first",
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "editor.codeActionsOnSave": {
-
-        "source.fixAll.eslint": true
-    },
-    "workbench.preferredLightColorTheme": "Noctis Lux",
-    "workbench.preferredDarkColorTheme": "Noctis Bordo",
-    "debug.javascript.autoAttachFilter": "onlyWithFlag",
-    "workbench.preferredHighContrastColorTheme": "Noctis Obscuro",
-    "workbench.editor.untitled.hint": "hidden",
-    "security.workspace.trust.untrustedFiles": "open",
-    "files.associations": {
-        "*.inc": "php"
-    },
-    "extensions.ignoreRecommendations": true,
-    "terminal.integrated.tabs.enabled": false,
-    "eslint.codeActionsOnSave.mode": "problems",
-    "eslint.codeActionsOnSave.rules": [],
-    "git.ignoreMissingGitWarning": true,
-    "window.autoDetectColorScheme": true,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "workbench.editor.empty.hint": "hidden",
-    "editor.lightbulb.enabled": false,
-    "terminal.integrated.shellIntegration.enabled": false,
-    "debug.openDebug": "openOnSessionStart",
-    "launch": {
-
-        "configurations": [],
-        "compounds": []
-    },
-    "workbench.colorTheme": "Noctis Bordo"
+    "workbench.colorTheme": "Noctis",
+    "workbench.iconTheme": "vscode-great-icons"
 }
