@@ -23,8 +23,8 @@ function install(): void {
 
     sh.exec('source ~/.nvm/nvm.sh')
     sh.exec('nvm install --lts')
-    sh.exec('nvm install 12.13.0')
-    sh.exec('nvm alias default 12.13.0')
+    sh.exec('nvm install 20')
+    sh.exec('nvm alias default 20')
   } else {
     console.log(Chalk.bgRed.bold('nvm install failed'))
   }

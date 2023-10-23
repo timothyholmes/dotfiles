@@ -1,12 +1,13 @@
-const Chalk = require('chalk')
-const Clear = require('clear')
-const Figlet = require('figlet')
-const Inquirer = require('inquirer')
+import Chalk from 'chalk'
+import Clear from 'clear'
+import Figlet from 'figlet'
+import Inquirer from 'inquirer'
 
 import { install as nvmInstall } from './handlers/nvm'
 import { install as homebrewInsall } from './handlers/homebrew'
 import { install as hyperInstall } from './handlers/hyper'
 import { install as vscodeInstall } from './handlers/vscode'
+import { install as codiumInstall } from './handlers/codium'
 import { install as zshInstall } from './handlers/zsh'
 import { install as powerlineFontsInstall } from './handlers/powerlineFonts'
 import { install as postmanInstall } from './handlers/postman'
@@ -17,6 +18,7 @@ const handlers = new Map<string, () => void>([
   ['homebrew', homebrewInsall],
   ['hyper', hyperInstall],
   ['vscode', vscodeInstall],
+  ['codium', codiumInstall],
   ['oh-my-zsh', zshInstall],
   ['powerline-fonts', powerlineFontsInstall],
   ['postman', postmanInstall],
