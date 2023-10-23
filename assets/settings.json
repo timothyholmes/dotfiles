@@ -2,5 +2,17 @@
     "workbench.colorTheme": "Noctis",
     "workbench.preferredDarkColorTheme": "Noctis Bordo",
     "workbench.preferredLightColorTheme": "Noctis Lux",
-    "workbench.iconTheme": "eq-material-theme-icons-deepforest"
+    "workbench.iconTheme": "eq-material-theme-icons-deepforest",
+    "debug.javascript.autoAttachFilter": "smart",
+    "terminal.external.osxExec": "Hyper.app",
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.lineHeight": 1.5,
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always"
+    },
+    "eslint.migration.2_x": "off"
 }
