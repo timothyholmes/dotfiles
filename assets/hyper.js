@@ -175,9 +175,9 @@ module.exports = {
   },
 
   plugins: [
-    "hyper-gruvbox",
+    // "hyper-gruvbox",
+    "hyper-hypest",
     "hyper-opacity",
-    // "hyper-statusline",
     "hyper-search", 
     "hypercwd"
   ],
