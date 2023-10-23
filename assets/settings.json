@@ -1,4 +1,6 @@
 {
     "workbench.colorTheme": "Noctis",
-    "workbench.iconTheme": "vscode-great-icons"
+    "workbench.preferredDarkColorTheme": "Noctis Bordo",
+    "workbench.preferredLightColorTheme": "Noctis Lux",
+    "workbench.iconTheme": "eq-material-theme-icons-deepforest"
 }

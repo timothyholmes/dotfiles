@@ -1,5 +1,5 @@
-const sh = require('shelljs')
-const Chalk = require('chalk')
+import sh from 'shelljs'
+import Chalk from 'chalk'
 
 function install(): void {
   if (!sh.which('code')) {

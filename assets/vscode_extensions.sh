@@ -1,10 +1,9 @@
-codium --install-extension christian-kohler.npm-intellisense
-codium --install-extension dbaeumer.vscode-eslint
-codium --install-extension emmanuelbeziat.vscode-great-icons
-codium --install-extension liviuschera.noctis
-codium --install-extension mikestead.dotenv
-codium --install-extension mrmlnc.vscode-duplicate
-codium --install-extension ms-python.python
-codium --install-extension ms-vscode.atom-keybindings
-codium --install-extension oderwat.indent-rainbow
-codium --install-extension wayou.vscode-todo-highlight
+code --force --install-extension christian-kohler.npm-intellisense
+code --force --install-extension dbaeumer.vscode-eslint
+code --force --install-extension equinusocio.vsc-material-theme-icons
+code --force --install-extension liviuschera.noctis
+code --force --install-extension mikestead.dotenv
+code --force --install-extension mohsen1.prettify-json
+code --force --install-extension mrmlnc.vscode-duplicate
+code --force --install-extension ms-vscode.atom-keybindings
+code --force --install-extension oderwat.indent-rainbow

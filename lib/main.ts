@@ -7,7 +7,6 @@ import { install as nvmInstall } from './handlers/nvm'
 import { install as homebrewInsall } from './handlers/homebrew'
 import { install as hyperInstall } from './handlers/hyper'
 import { install as vscodeInstall } from './handlers/vscode'
-import { install as codiumInstall } from './handlers/codium'
 import { install as zshInstall } from './handlers/zsh'
 import { install as powerlineFontsInstall } from './handlers/powerlineFonts'
 import { install as postmanInstall } from './handlers/postman'
@@ -18,7 +17,6 @@ const handlers = new Map<string, () => void>([
   ['homebrew', homebrewInsall],
   ['hyper', hyperInstall],
   ['vscode', vscodeInstall],
-  ['codium', codiumInstall],
   ['oh-my-zsh', zshInstall],
   ['powerline-fonts', powerlineFontsInstall],
   ['postman', postmanInstall],
@@ -64,9 +62,7 @@ const run = async () => {
     }
   ])
 
-  let tooling: Array<string>
-
-  tooling = await installMethods.get(chosenMethod)!([...handlers.keys()])
+  const tooling: Array<string> = await installMethods.get(chosenMethod)!([...handlers.keys()])
 
   try {
     for (const tool of tooling) {

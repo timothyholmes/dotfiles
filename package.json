@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node build/index.js",
-    "get-vscode-extensions": "code --list-extensions | xargs -L 1 echo code --install-extension > ./assets/vscode_extensions.sh",
+    "get-vscode-extensions": "code --list-extensions | xargs -L 1 echo code --force --install-extension > ./assets/vscode_extensions.sh",
     "get-shell-settings": "cp ~/.zshrc ./assets/zshrc && cp ~/.hyper.js ./assets/hyper.js && cp ~/.aliases ./assets/aliases && cp ~/.vimrc ./assets/vimrc && cp $HOME/Library/Application\\ Support/Code/User/settings.json ./assets/ && cp $HOME/Library/Application\\ Support/Code/User/keybindings.json ./assets/",
     "tsc": "tsc"
   },
@@ -28,6 +28,7 @@
     "@types/figlet": "^1.5.7",
     "@types/inquirer": "^9.0.6",
     "@types/node": "^20.8.7",
+    "@types/shelljs": "^0.8.14",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "eslint": "^8.52.0",
