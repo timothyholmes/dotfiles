@@ -14,5 +14,6 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": "always"
     },
-    "eslint.migration.2_x": "off"
+    "eslint.migration.2_x": "off",
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline"
 }
