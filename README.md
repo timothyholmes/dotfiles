@@ -39,3 +39,12 @@ The following tools can be installed with Dotfiles. Settings sync occurs for hyp
 To add a new tool, create a new `handler` file that exposes and named function `install` which handles the installation and settings sync for the new tool.
 
 Add the new handler to the `handlers` array in `lib/main.js`. 💡 Would love if this step was unnecessary, the handlers could definitely be programmatically pulled in with a code change.
+
+## TODO
+
+There are a few tools I use in my setup I should add if possible.
+
+* Ghostty -> replaces hyper
+* Focus Firewall
+* Karabiner (key remapping)
+* Rectangle
