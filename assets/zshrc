@@ -20,7 +20,20 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
+#OktaAWSCLI
+if [[ -f "$HOME/.okta/bash_functions" ]]; then
+    . "$HOME/.okta/bash_functions"
+fi
+if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
+    PATH="$HOME/.okta/bin:$PATH"
+fi
 
-source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
-source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.1.3
+[[ -s "/Users/timothyholmes/.gvm/scripts/gvm" ]] && source "/Users/timothyholmes/.gvm/scripts/gvm"
+
+export PATH="/usr/local/sbin:$PATH"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export PATH="$HOME/.local/bin:$PATH"
