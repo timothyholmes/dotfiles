@@ -22,6 +22,8 @@ fi
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH
 #OktaAWSCLI
 if [[ -f "$HOME/.okta/bash_functions" ]]; then
     . "$HOME/.okta/bash_functions"
@@ -31,6 +33,12 @@ if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
 fi
 
 [[ -s "/Users/timothyholmes/.gvm/scripts/gvm" ]] && source "/Users/timothyholmes/.gvm/scripts/gvm"
+
+ssh_box () {
+    REPLACE_SHORTNAME=$1
+    REPLACE_LANG=$2
+    command ssh -A -i ~/.ssh/tholmes.pem luminate@$REPLACE_LANG.$REPLACE_SHORTNAME.use1.amz.mtmetest.com@dev-ssh-gateway-devstack@dev-ssh-gateway-devstack.ssh.tmg.luminatesec.com
+}
 
 export PATH="/usr/local/sbin:$PATH"
 
